@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/normalize.css">
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Agent - Dashboard</title>
+</head>
+
+<body>
+    <section class="content-wrap">
+        <header class="header row">
+            <div class="logo col-12 col-md-12 col-xl-2">
+                <img src="img/logo.png" alt="logo">
+
+            </div>
+            <nav class="nav col-md-12 col-xl-6 row">
+                <div class="nav__item col-6 col-xl-2">
+                    <img src="img/browser-sml1.svg" alt="icon">
+                    <a href="#" class="nav__item-wrap__subtext">Dashboard</a>
+                </div>
+                <div class="nav__item col-6 col-xl-2">
+                    <img src="img/keys-sml-white.svg" alt="icon">
+                    <a href="#" class="nav__item-wrap__subtext">
+                        Sites & Leases
+                    </a>
+
+                </div>
+                <div class="nav__item col-6 col-xl-2">
+                    <img src="img/alert-message-sml.svg" alt="icon">
+                    <a href="#" class="nav__item-wrap__subtext">
+                        Reminders
+                    </a>
+
+                </div>
+                <div class="nav__item col-6 col-xl-2">
+                    <img src="img/pie-line-graph-sml.svg" alt="icon">
+                    <a href="#" class="nav__item-wrap__subtext">
+                        Report
+                    </a>
+
+                </div>
+
+                <div class="nav__item col-6 col-xl-2">
+                    <img src="img/face-sml.svg" alt="icon">
+                    <a href="#" class="nav__item-wrap__subtext">
+                        Agent
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="#">Agent Dashboard</a></li>
+                        <li><a href="#">Agent Savings</a></li>
+                        <li><a href="#">Agent Billing</a></li>
+                        <li><a href="#">Agent Users</a></li>
+                    </ul>
+
+                </div>
+                <div class="nav__item col-6 col-xl-2">
+                    <img src="img/browser-sml.svg" alt="icon">
+                    <a href="#" class="nav__item-wrap__subtext">
+                        Settings
+                    </a>
+
+                </div>
+
+            </nav>
+            <div class="header__button-wrap col-12 col-md-6 col-xl-2">
+                <a href="#"><span class="plus">+</span> Add Lease</a>
+            </div>
+            <div class="header__logout col-12 col-md-6 col-xl-2">
+                <div class="header__logout__icon">
+                    <img src="img/user-icon.png" alt="user-icon">
+                </div>
+                <div class="header__logout__reg-in">
+                    <a href="#">Logout</a>
+                </div>
+                <div class="header__logout__welcome">
+                    <p>Welcome back</p>
+                </div>
+            </div>
+
+        </header>
+        <section class="name-dashboard">
+            <p>
+                Agent Dashboard
+            </p>
+        </section>
+        <section class="plates">
+            <div class="plates-line row">
+                <div class="plate col-12 col-xl-4">
+                    <p class="plate__num">
+                        2
+                    </p>
+                    <p class="plate__text">
+                        Leases under managem
+                    </p>
+                </div>
+                <div class="plate col-12 col-xl-4">
+                    <p class="plate__num">
+                        0
+                    </p>
+                    <p class="plate__text">
+                        Lease Under Investig
+                    </p>
+                </div>
+                <div class="plate col-12 col-xl-4">
+                    <p class="plate__num">
+                        1
+                    </p>
+                    <p class="plate__text">
+                        Lease Negotiation in
+                    </p>
+                </div>
+            </div>
+            <div class="plates-line row">
+                <div class="plate col-12 col-xl-4">
+                    <p class="plate__num">
+                        0
+                    </p>
+                    <p class="plate__text">
+                        Lease Terms Agreed
+                    </p>
+                </div>
+                <div class="plate col-12 col-xl-4">
+                    <p class="plate__num">
+                        0
+                    </p>
+                    <p class="plate__text">
+                        Lease Awaiting Landl
+                    </p>
+                </div>
+                <div class="plate col-12 col-xl-4">
+                    <p class="plate__num">
+                        0
+                    </p>
+                    <p class="plate__text">
+                        Lease Awaiting Tenan
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="leases-under-managem">
+            <div class="row">
+                <div class="name-section col-xl-8 col-12">
+                    <p>Leases under managem</p>
+                </div>
+                <div class="button-1 col-xl-2 col-md-6 col-12">
+                    <a href="#"><span class="plus">+</span> Add Agent</a>
+                </div>
+                <div class="button-2 col-xl-2 col-md-6 col-12">
+                    <a href="#"><span class="plus">&nbsp;</span><img src="img/icon-but.png" alt="" class="plus"> Export
+                        lease</a>
+                </div>
+
+            </div>
+            <div class="agent-dashbord-form">
+                <form method="post" action="">
+                    <div class="row">
+                        <div class="agent-dashbord-form__input col-xl-4 col-12 col-md-12">
+                            <label for="site-id">Site ID</label>
+                            <input type="text" name="site-id" placeholder="Site ID...">
+                        </div>
+                        <div class="agent-dashbord-form__input col-xl-4 col-12 col-md-12">
+                            <label for="site-name">Site Name</label>
+                            <input type="text" name="site-name" placeholder="Site Name...">
+                        </div>
+                        <div class="agent-dashbord-form__input col-xl-4 col-12 col-md-12">
+                            <label for="site-status">Site Status</label>
+                            <select name="country">
+                                <option>Site Status</option>
+                                <option value="Status-1">Status-1</option>
+                                <option value="Status-2">Status-2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="button-1 col-xl-2 col-12 col-md-6">
+                            <a href="#"><span class="plus">&nbsp;</span>Search</a>
+                        </div>
+                        <div class="button-3 col-xl-2 col-12 col-md-6">
+                            <a href="#"><span class="plus">&times;</span> Reset</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </section>
+
+    </section>
+</body>
+
+</html>
